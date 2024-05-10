@@ -5,7 +5,7 @@ const pageConfig = {
   links: [
     { link: 'https://yuanshen.site/docs/', label: 'Main Site' },
     { link: 'https://github.com/kongying-tavern', label: 'GitHub' },
-    { link: 'https://yuanshen.site/docs/en/support-us#bilibili', label: 'Bilibili' },
+    { link: 'https://space.bilibili.com/518076785', label: 'Bilibili' },
   ],
 }
 
