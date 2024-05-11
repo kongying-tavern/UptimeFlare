@@ -58,15 +58,15 @@ const workerConfig = {
       },
       {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'map-assets',
+      id: 'map-ecould',
       // `name` is used at status page and callback message
-      name: 'Genshin Interactive Map Assets',
+      name: 'Genshin Interactive Map Ecould',
       // `method` should be a valid HTTP Method
-      method: 'GET',
+      method: 'POST',
       // `target` is a valid URL
-      target: 'https://assets.yuanshen.site/web-map.json',
+      target: 'https://cloud.yuanshen.site/api/item_type/get/list/1',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'Genshin Interactive Map Assets',
+      tooltip: 'Genshin Interactive Map Ecould',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://v3.yuanshen.site/',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -79,7 +79,7 @@ const workerConfig = {
       },
       {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'alist',
+      id: 'map-alist',
       // `name` is used at status page and callback message
       name: 'Genshin Interactive Map Alist',
       // `method` should be a valid HTTP Method
