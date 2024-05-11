@@ -16,7 +16,7 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
+      id: 'map-webpage-v3',
       // `name` is used at status page and callback message
       name: 'Genshin Interactive Map V3 Webpage',
       // `method` should be a valid HTTP Method
@@ -29,6 +29,90 @@ const workerConfig = {
       statusPageLink: 'https://v3.yuanshen.site/',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+      // [OPTIONAL] headers to be sent
+      headers: {
+        'User-Agent': 'Uptimeflare'
+      },
+      {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'map-assets',
+      // `name` is used at status page and callback message
+      name: 'Genshin Interactive Map Assets',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://assets.yuanshen.site/web-map.json',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'Genshin Interactive Map Assets',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://v3.yuanshen.site/',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+      // [OPTIONAL] headers to be sent
+      headers: {
+        'User-Agent': 'Uptimeflare'
+      },
+      {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'map-assets',
+      // `name` is used at status page and callback message
+      name: 'Genshin Interactive Map Assets',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://assets.yuanshen.site/web-map.json',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'Genshin Interactive Map Assets',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://v3.yuanshen.site/',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+      // [OPTIONAL] headers to be sent
+      headers: {
+        'User-Agent': 'Uptimeflare'
+      },
+      {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'alist',
+      // `name` is used at status page and callback message
+      name: 'Genshin Interactive Map Alist',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://tiles.yuanshen.site/d/MainMap/md5.json',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'Genshin Interactive Map Alist',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://tiles.yuanshen.site/',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+      // [OPTIONAL] headers to be sent
+      headers: {
+        'User-Agent': 'Uptimeflare'
+      },
+       {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'docs-api',
+      // `name` is used at status page and callback message
+      name: 'Genshin Interactive Map Docs Api',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://doc-apis.yuanshen.site/',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'Genshin Interactive Map Docs Api',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://yuanshen.site/docs',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200,401],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
       // [OPTIONAL] headers to be sent
