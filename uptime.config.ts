@@ -5,8 +5,8 @@ const pageConfig = {
     { link: 'https://yuanshen.site/docs/', label: 'Main Site' },
     { link: 'https://github.com/kongying-tavern', label: 'GitHub' },
     { link: 'https://space.bilibili.com/518076785', label: 'Bilibili' },
-    { link: 'https://yuanshen.site/docs/join', highligh: true, label: 'Join Us' },
-    
+    { link: 'https://yuanshen.site/docs/join', highligh: true, label: 'Join Us' }
+
   ],
 }
 
@@ -37,7 +37,8 @@ const workerConfig = {
       headers: {
         'User-Agent': 'Uptimeflare'
       },
-      {
+    },
+    {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'map-assets',
       // `name` is used at status page and callback message
@@ -58,7 +59,8 @@ const workerConfig = {
       headers: {
         'User-Agent': 'Uptimeflare'
       },
-      {
+    },
+    {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'map-ecould',
       // `name` is used at status page and callback message
@@ -79,7 +81,8 @@ const workerConfig = {
       headers: {
         'User-Agent': 'Uptimeflare'
       },
-      {
+    },
+    {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'map-alist',
       // `name` is used at status page and callback message
@@ -100,9 +103,10 @@ const workerConfig = {
       headers: {
         'User-Agent': 'Uptimeflare'
       },
-       {
+    },
+    {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'docs-api',
+      id: 'map-docs-api',
       // `name` is used at status page and callback message
       name: 'Genshin Interactive Map Docs Api',
       // `method` should be a valid HTTP Method
@@ -114,7 +118,7 @@ const workerConfig = {
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://yuanshen.site/docs',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      expectedCodes: [200,401],
+      expectedCodes: [200, 401],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
       // [OPTIONAL] headers to be sent
